@@ -124,10 +124,10 @@ Servo GND (preto/marrom) → GND (ESP32)
 Servo Sinal (amarelo/laranja) → GPIO 13 (ESP32)
 
 ---
-## 💻 Código de Exemplo
+### 💻 Código de Exemplo
 
 ```cpp
-Copiar código
+
 #include <ESP32Servo.h>
 
 Servo meuServo;
