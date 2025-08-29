@@ -112,7 +112,7 @@ Controlar o movimento de um servo motor usando o ESP32.
 
 🔌 Montagem
 
-![Materiais](images/1-2.jpeg)  
+![Materiais](images/1-2.jpg)  
 ![Ligação do Servo](images/3-1.jpg)  
 
 Ligações principais:
