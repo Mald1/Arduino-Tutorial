@@ -96,8 +96,9 @@ void loop() {
 ```
 ---
 
-## 1 - ⚙️ *** Mini Projeto 2: Servo Motor com ESP32 ***
+## 1 - ⚙️ Mini Projeto 2: Servo Motor com ESP32
 ## 2 - 🎯 Objetivo
+
 Controlar o movimento de um servo motor usando o ESP32.
 
 🛠️ Materiais necessários
@@ -111,6 +112,9 @@ Controlar o movimento de um servo motor usando o ESP32.
 
 🔌 Montagem
 
+![Materiais](images/1-2.jpeg)  
+![Ligação do Servo](images/3-1.jpg)  
+
 Ligações principais:
 
 Servo VCC (vermelho) → 5V (ESP32)
@@ -119,7 +123,9 @@ Servo GND (preto/marrom) → GND (ESP32)
 
 Servo Sinal (amarelo/laranja) → GPIO 13 (ESP32)
 
-💻 Código de Exemplo
+---
+## 💻 Código de Exemplo
+```
 cpp
 Copiar código
 #include <ESP32Servo.h>
@@ -140,4 +146,5 @@ void loop() {
     delay(500);
   }
 }
+```
 
