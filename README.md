@@ -94,9 +94,10 @@ void loop() {
   delay(1000);
 }
 ```
+---
 
-1 - ⚙️ *** Mini Projeto 2: Servo Motor com ESP32 ***
-2 - 🎯 Objetivo
+## 1 - ⚙️ *** Mini Projeto 2: Servo Motor com ESP32 ***
+## 2 - 🎯 Objetivo
 Controlar o movimento de um servo motor usando o ESP32.
 
 🛠️ Materiais necessários
