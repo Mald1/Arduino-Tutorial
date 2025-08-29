@@ -42,7 +42,7 @@ Os LEDs indicam a condição da temperatura:
 ### 🔌 Montagem
 
 ![Montagem do sensor de temperatura](images/1-1.jpeg)  
-![Ligação dos LEDs](images/1-3.jpeg)  
+![Ligação dos LEDs](images/7-1.jpeg)  
 
 #### Ligações principais:
 - **Sensor de Temperatura**  
