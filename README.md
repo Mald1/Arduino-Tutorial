@@ -115,7 +115,7 @@ Controlar o movimento de um servo motor usando o ESP32.
 ![Materiais](images/1-2.jpg)  
 ![Ligação do Servo](images/3-1.jpg)  
 
-Ligações principais:
+## Ligações principais:
 
 Servo VCC (vermelho) → 5V (ESP32)
 
@@ -125,8 +125,8 @@ Servo Sinal (amarelo/laranja) → GPIO 13 (ESP32)
 
 ---
 ## 💻 Código de Exemplo
-```
-cpp
+
+```cpp
 Copiar código
 #include <ESP32Servo.h>
 
