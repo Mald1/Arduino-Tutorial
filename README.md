@@ -3,7 +3,6 @@ Beleza 🚀 Vou te montar um **tutorial em Markdown** bem estruturado, como se f
 
 ---
 
-````markdown
 # 🌐 Projeto IoT com ESP32
 Este projeto é dividido em **2 mini projetos independentes**, ambos utilizando o **ESP32** como microcontrolador principal:
 
@@ -92,7 +91,7 @@ void loop() {
 
   delay(1000);
 }
-````
+
 
 ---
 
