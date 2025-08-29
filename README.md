@@ -1,9 +1,5 @@
-# Arduino-Tutorial
-Beleza 🚀 Vou te montar um **tutorial em Markdown** bem estruturado, como se fosse a documentação de um projeto de IoT. Ele terá introdução, materiais, montagem passo a passo (com imagens representadas por placeholders que você pode trocar), e um exemplo de código para cada mini projeto.
-
----
-
 # 🌐 Projeto IoT com ESP32
+
 Este projeto é dividido em **2 mini projetos independentes**, ambos utilizando o **ESP32** como microcontrolador principal:
 
 1. 🔥 **Sensor de Temperatura com LEDs Indicativos**  
@@ -12,7 +8,9 @@ Este projeto é dividido em **2 mini projetos independentes**, ambos utilizando 
 ---
 
 ## 📌 Pré-requisitos
+
 Antes de iniciar, você precisa ter instalado no seu computador:
+
 - [Arduino IDE](https://www.arduino.cc/en/software) ou [PlatformIO](https://platformio.org/)
 - Biblioteca do **ESP32** configurada no Arduino IDE
 - Conhecimentos básicos de eletrônica (jumpers, resistores, LEDs)
@@ -22,14 +20,17 @@ Antes de iniciar, você precisa ter instalado no seu computador:
 ## 🔥 Mini Projeto 1: Sensor de Temperatura com LEDs
 
 ### 🎯 Objetivo
+
 Montar um sistema que utiliza um **sensor de temperatura** conectado ao ESP32.  
 Os LEDs indicam a condição da temperatura:
+
 - 🔴 **LED Vermelho** → Temperatura alta  
 - 🟢 **LED Verde** → Temperatura dentro do normal  
 
 ---
 
 ### 🛠️ Materiais necessários
+
 - 1x ESP32  
 - 1x Sensor de Temperatura (ex: **LM35** ou **DHT11**, conforme disponível)  
 - 2x LEDs (vermelho e verde)  
@@ -44,7 +45,8 @@ Os LEDs indicam a condição da temperatura:
 ![Montagem do sensor de temperatura](images/1-1.jpeg)  
 ![Ligação dos LEDs](images/7-1.jpeg)  
 
-#### Ligações principais:
+**Ligaçõ​es principais:**
+
 - **Sensor de Temperatura**  
   - VCC → 3.3V (ESP32)  
   - GND → GND (ESP32)  
@@ -60,7 +62,8 @@ Os LEDs indicam a condição da temperatura:
 
 ---
 
-### 💻 Código de Exemplo (LM35 ou genérico analógico)
+### 💻 Código de Exemplo (LM35 ou sensor analógico)
+
 ```cpp
 #define TEMP_PIN 34
 #define LED_VERDE 25
@@ -90,42 +93,32 @@ void loop() {
 
   delay(1000);
 }
+⚙️ Mini Projeto 2: Servo Motor com ESP32
+🎯 Objetivo
+Controlar o movimento de um servo motor usando o ESP32.
 
+🛠️ Materiais necessários
+1x ESP32
 
----
+1x Servo Motor (ex: SG90)
 
-## ⚙️ Mini Projeto 2: Servo Motor com ESP32
+3x Jumpers
 
-### 🎯 Objetivo
+1x Protoboard (opcional, apenas para organizar)
 
-Controlar o movimento de um **servo motor** usando o ESP32.
+🔌 Montagem
 
----
+Ligações principais:
 
-### 🛠️ Materiais necessários
+Servo VCC (vermelho) → 5V (ESP32)
 
-* 1x ESP32
-* 1x Servo Motor (ex: SG90)
-* 3x Jumpers
-* 1x Protoboard (opcional, só para organizar)
+Servo GND (preto/marrom) → GND (ESP32)
 
----
+Servo Sinal (amarelo/laranja) → GPIO 13 (ESP32)
 
-### 🔌 Montagem
-
-![Montagem do servo motor](imagens/servo01.jpg)
-
-#### Ligações principais:
-
-* Servo **VCC (vermelho)** → 5V (ESP32)
-* Servo **GND (preto/marrom)** → GND (ESP32)
-* Servo **Sinal (amarelo/laranja)** → GPIO 13 (ESP32)
-
----
-
-### 💻 Código de Exemplo
-
-```cpp
+💻 Código de Exemplo
+cpp
+Copiar código
 #include <ESP32Servo.h>
 
 Servo meuServo;
@@ -144,6 +137,4 @@ void loop() {
     delay(500);
   }
 }
-```
 
----
